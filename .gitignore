@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.venv/
+build/
+dist/
+.build/
+.DS_Store
+.claude/
+
+# Xcode user data
+xcuserdata/
+
+# stray tilde directory (accidental artifact)
+~/
+
+# runtime session trace artifact
+autoverse-trace.json
+
+# generated image artifacts at repo root
+/*.png
+
+# runtime worktree + todo artifacts
+.autoverse/worktrees/
+.autoverse/todos-*/
+# local secrets file (API keys)
+.autoverse/secrets

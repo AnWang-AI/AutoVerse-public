@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* AutoVerseAppleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* AutoVerseAppleApp.swift */; };
+		100000000000000000000002 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* AppModel.swift */; };
+		100000000000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* ContentView.swift */; };
+		100000000000000000000004 /* ConnectionSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* ConnectionSettingsView.swift */; };
+		100000000000000000000005 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* WebView.swift */; };
+		100000000000000000000006 /* LocalServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* LocalServerController.swift */; };
+		100000000000000000000007 /* InteractionMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000C /* InteractionMotion.swift */; };
+		100000000000000000000008 /* MotionTokenValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000D /* MotionTokenValues.swift */; };
+		100000000000000000000009 /* BrowserHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000E /* BrowserHost.swift */; };
+		10000000000000000000000A /* BrowserURLPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000F /* BrowserURLPolicy.swift */; };
+		110000000000000000000001 /* AutoVerseAppleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* AutoVerseAppleApp.swift */; };
+		110000000000000000000002 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* AppModel.swift */; };
+		110000000000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* ContentView.swift */; };
+		110000000000000000000004 /* ConnectionSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* ConnectionSettingsView.swift */; };
+		110000000000000000000005 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* WebView.swift */; };
+		110000000000000000000006 /* InteractionMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000C /* InteractionMotion.swift */; };
+		110000000000000000000007 /* MotionTokenValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000D /* MotionTokenValues.swift */; };
+		110000000000000000000008 /* BrowserHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000E /* BrowserHost.swift */; };
+		110000000000000000000009 /* BrowserURLPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000F /* BrowserURLPolicy.swift */; };
+		120000000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000B /* Assets.xcassets */; };
+		120000000000000000000002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		200000000000000000000001 /* AutoVerseAppleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoVerseAppleApp.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* ConnectionSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettingsView.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* LocalServerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalServerController.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		200000000000000000000008 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		200000000000000000000009 /* AutoVerse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoVerse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000A /* AutoVerse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoVerse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20000000000000000000000C /* InteractionMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionMotion.swift; sourceTree = "<group>"; };
+		20000000000000000000000D /* MotionTokenValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionTokenValues.swift; sourceTree = "<group>"; };
+		20000000000000000000000E /* BrowserHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserHost.swift; sourceTree = "<group>"; };
+		20000000000000000000000F /* BrowserURLPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserURLPolicy.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				400000000000000000000002 /* Sources */,
+				400000000000000000000006 /* Config */,
+				400000000000000000000008 /* Resources */,
+				400000000000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		400000000000000000000002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				400000000000000000000003 /* App */,
+				400000000000000000000004 /* Shared */,
+				400000000000000000000005 /* macOS */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		400000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* AutoVerseAppleApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		400000000000000000000004 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000002 /* AppModel.swift */,
+				20000000000000000000000E /* BrowserHost.swift */,
+				20000000000000000000000F /* BrowserURLPolicy.swift */,
+				200000000000000000000004 /* ConnectionSettingsView.swift */,
+				200000000000000000000003 /* ContentView.swift */,
+				20000000000000000000000C /* InteractionMotion.swift */,
+				20000000000000000000000D /* MotionTokenValues.swift */,
+				200000000000000000000005 /* WebView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		400000000000000000000005 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000006 /* LocalServerController.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		400000000000000000000006 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000008 /* Info-iOS.plist */,
+				200000000000000000000007 /* Info-macOS.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		400000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000009 /* AutoVerse.app */,
+				20000000000000000000000A /* AutoVerse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		400000000000000000000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* AutoVerse macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000002 /* Build configuration list for PBXNativeTarget "AutoVerse macOS" */;
+			buildPhases = (
+				600000000000000000000001 /* Sources */,
+				300000000000000000000001 /* Frameworks */,
+				600000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AutoVerse macOS";
+			productName = AutoVerse;
+			productReference = 200000000000000000000009 /* AutoVerse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		500000000000000000000002 /* AutoVerse iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000003 /* Build configuration list for PBXNativeTarget "AutoVerse iOS" */;
+			buildPhases = (
+				600000000000000000000002 /* Sources */,
+				300000000000000000000002 /* Frameworks */,
+				600000000000000000000004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AutoVerse iOS";
+			productName = AutoVerse;
+			productReference = 20000000000000000000000A /* AutoVerse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		700000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					500000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					500000000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 800000000000000000000001 /* Build configuration list for PBXProject "AutoVerseApple" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 400000000000000000000001;
+			productRefGroup = 400000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500000000000000000000001 /* AutoVerse macOS */,
+				500000000000000000000002 /* AutoVerse iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		600000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120000000000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600000000000000000000004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120000000000000000000002 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		600000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* AutoVerseAppleApp.swift in Sources */,
+				100000000000000000000002 /* AppModel.swift in Sources */,
+				100000000000000000000003 /* ContentView.swift in Sources */,
+				100000000000000000000004 /* ConnectionSettingsView.swift in Sources */,
+				100000000000000000000007 /* InteractionMotion.swift in Sources */,
+				100000000000000000000008 /* MotionTokenValues.swift in Sources */,
+				100000000000000000000009 /* BrowserHost.swift in Sources */,
+				10000000000000000000000A /* BrowserURLPolicy.swift in Sources */,
+				100000000000000000000005 /* WebView.swift in Sources */,
+				100000000000000000000006 /* LocalServerController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110000000000000000000001 /* AutoVerseAppleApp.swift in Sources */,
+				110000000000000000000002 /* AppModel.swift in Sources */,
+				110000000000000000000003 /* ContentView.swift in Sources */,
+				110000000000000000000004 /* ConnectionSettingsView.swift in Sources */,
+				110000000000000000000006 /* InteractionMotion.swift in Sources */,
+				110000000000000000000007 /* MotionTokenValues.swift in Sources */,
+				110000000000000000000008 /* BrowserHost.swift in Sources */,
+				110000000000000000000009 /* BrowserURLPolicy.swift in Sources */,
+				110000000000000000000005 /* WebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		900000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				SYMROOT = "$(SRCROOT)/../build/Build";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		900000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				SYMROOT = "$(SRCROOT)/../build/Build";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		910000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/Info-macOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoverse.app.macos;
+				PRODUCT_NAME = AutoVerse;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		910000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/Info-macOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoverse.app.macos;
+				PRODUCT_NAME = AutoVerse;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		920000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZCR9NY9Q6;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoverse.app.ios;
+				PRODUCT_NAME = AutoVerse;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		920000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZCR9NY9Q6;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoverse.app.ios;
+				PRODUCT_NAME = AutoVerse;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800000000000000000000001 /* Build configuration list for PBXProject "AutoVerseApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900000000000000000000001 /* Debug */,
+				900000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800000000000000000000002 /* Build configuration list for PBXNativeTarget "AutoVerse macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910000000000000000000001 /* Debug */,
+				910000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800000000000000000000003 /* Build configuration list for PBXNativeTarget "AutoVerse iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				920000000000000000000001 /* Debug */,
+				920000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 700000000000000000000001 /* Project object */;
+}

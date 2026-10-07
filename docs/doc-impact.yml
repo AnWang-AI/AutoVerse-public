@@ -1,0 +1,252 @@
+# Documentation Impact Map
+#
+# This file maps code ownership areas to documentation that must be considered
+# whenever that code changes. It intentionally uses a small YAML subset so
+# scripts/check_doc_impact.py can parse it without optional dependencies.
+#
+# Semantics:
+# - required_docs: current reference/architecture pages that must stay aligned.
+# - conditional_docs: guide/design pages to update when the change affects user
+#   workflow, design rationale, or open design questions.
+# - tests: checks that should cover the area when feasible.
+
+areas:
+  public-api:
+    code:
+      - src/autoverse/__init__.py
+      - pyproject.toml
+    required_docs:
+      - README.md
+      - docs/reference/cli.md
+      - docs/README.md
+    conditional_docs:
+      - docs/guides/getting-started.md
+      - docs/reference/events-and-storage.md
+      - docs/reference/testing.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  architecture:
+    code:
+      - src/autoverse/types/**
+      - src/autoverse/ports/**
+      - src/autoverse/core/**
+      - src/autoverse/app/**
+      - pyproject.toml
+    required_docs:
+      - docs/architecture/layers.md
+      - docs/architecture/runtime-flow.md
+      - docs/architecture/contracts.md
+      - docs/architecture/component-map.md
+      - docs/architecture/state-ownership.md
+    conditional_docs:
+      - docs/design/subagents-and-workflows.md
+      - docs/design/tools-and-permissions.md
+      - docs/design/persistence-observability.md
+      - docs/design/frontend-interaction-responsiveness.md
+      - docs/adr/README.md
+    tests:
+      - tests/contract/test_contracts.py
+
+  cli-and-commands:
+    code:
+      - src/autoverse/frontends/cli/**
+      - src/autoverse/frontends/repl/**
+    required_docs:
+      - docs/reference/cli.md
+      - docs/reference/commands.md
+    conditional_docs:
+      - docs/guides/using-cli-and-tui.md
+      - docs/guides/common-workflows.md
+      - docs/design/frontend.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  webui:
+    code:
+      - src/autoverse/frontends/web/**
+    required_docs:
+      - docs/reference/webui-api.md
+      - docs/architecture/frontend-adapters.md
+    conditional_docs:
+      - docs/guides/using-webui.md
+      - docs/design/frontend.md
+      - docs/design/frontend-interaction-responsiveness.md
+      - docs/reference/events-and-storage.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  apple-shell:
+    code:
+      - apple/**
+      - design-tokens/**
+      - scripts/generate_motion_tokens.py
+    required_docs:
+      - apple/README.md
+    conditional_docs:
+      - docs/guides/using-webui.md
+      - docs/design/frontend.md
+      - docs/design/frontend-interaction-responsiveness.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  gateway:
+    code:
+      - src/autoverse/frontends/gateway/**
+    required_docs:
+      - docs/reference/extensions.md
+      - docs/architecture/frontend-adapters.md
+    conditional_docs:
+      - docs/reference/testing.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  tools-and-permissions:
+    code:
+      - src/autoverse/core/tools/**
+      - src/autoverse/infra/browser/**
+      - src/autoverse/infra/tools/**
+      - src/autoverse/infra/permission/**
+      - src/autoverse/infra/snapshot/**
+    required_docs:
+      - docs/reference/tools.md
+    conditional_docs:
+      - docs/guides/common-workflows.md
+      - docs/design/tools-and-permissions.md
+      - docs/reference/commands.md
+      - docs/reference/events-and-storage.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  llm-and-models:
+    code:
+      - src/autoverse/infra/llm/**
+      - src/autoverse/types/llm.py
+    required_docs:
+      - docs/reference/models.md
+    conditional_docs:
+      - docs/guides/configuration.md
+      - docs/design/llm-protocol.md
+      - docs/reference/config.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  config-secrets-memory:
+    code:
+      - src/autoverse/app/config.py
+      - src/autoverse/infra/config/**
+      - src/autoverse/infra/secrets/**
+      - src/autoverse/infra/memory/**
+      - src/autoverse/core/state/**
+    required_docs:
+      - docs/reference/config.md
+    conditional_docs:
+      - docs/guides/configuration.md
+      - docs/guides/project-memory.md
+      - docs/reference/models.md
+      - docs/reference/context-and-compaction.md
+      - docs/design/persistence-observability.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  persistence-observability:
+    code:
+      - src/autoverse/infra/persist/**
+      - src/autoverse/infra/observ/**
+      - src/autoverse/ports/__init__.py
+      - src/autoverse/types/events.py
+    required_docs:
+      - docs/reference/events-and-storage.md
+      - docs/architecture/state-ownership.md
+    conditional_docs:
+      - docs/design/persistence-observability.md
+      - docs/design/frontend-interaction-responsiveness.md
+      - docs/architecture/runtime-flow.md
+      - docs/reference/webui-api.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  subagents-workflows-isolation:
+    code:
+      - src/autoverse/core/subagent/**
+      - src/autoverse/core/workflow/**
+      - src/autoverse/infra/isolation/**
+      - src/autoverse/infra/tools/agent_tool.py
+    required_docs:
+      - docs/reference/subagents.md
+      - docs/reference/workflows.md
+    conditional_docs:
+      - docs/design/subagents-and-workflows.md
+      - docs/architecture/runtime-flow.md
+      - docs/architecture/state-ownership.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  context-and-compaction:
+    code:
+      - src/autoverse/core/context/**
+      - src/autoverse/core/state/conversation.py
+      - src/autoverse/core/loop/turn_loop.py
+      - src/autoverse/app/engine.py
+      - src/autoverse/app/policy_map.py
+    required_docs:
+      - docs/reference/context-and-compaction.md
+      - docs/architecture/runtime-flow.md
+      - docs/architecture/state-ownership.md
+    conditional_docs:
+      - docs/reference/config.md
+      - docs/design/persistence-observability.md
+      - docs/guides/troubleshooting.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  extensions-mcp-skills-hooks:
+    code:
+      - src/autoverse/app/extensions.py
+      - src/autoverse/app/extension_admin.py
+      - src/autoverse/infra/plugins/**
+      - src/autoverse/infra/skills/**
+      - src/autoverse/infra/mcp/**
+      - src/autoverse/infra/hooks/**
+    required_docs:
+      - docs/reference/extensions.md
+      - docs/reference/skills.md
+      - docs/reference/mcp.md
+      - docs/reference/hooks.md
+    conditional_docs:
+      - docs/guides/skills.md
+      - docs/guides/mcp.md
+      - docs/guides/hooks.md
+      - docs/design/skills.md
+    tests:
+      - tests/contract/test_documentation_contracts.py
+
+  documentation-governance:
+    code:
+      - AGENTS.md
+      - docs/DOCUMENTATION.md
+      - docs/doc-impact.yml
+      - docs/templates/**
+      - docs/README.md
+      - scripts/check_doc_impact.py
+      - tests/contract/test_documentation_contracts.py
+    required_docs:
+      - docs/DOCUMENTATION.md
+      - docs/doc-impact.yml
+    conditional_docs:
+      - AGENTS.md
+      - README.md
+      - docs/README.md
+      - docs/guides/getting-started.md
+      - docs/templates/README.md
+      - docs/templates/current-index.md
+      - docs/templates/guide.md
+      - docs/templates/reference.md
+      - docs/templates/architecture.md
+      - docs/templates/design.md
+      - docs/templates/adr.md
+      - docs/guides/contributing.md
+      - docs/architecture/component-map.md
+      - docs/architecture/state-ownership.md
+    tests:
+      - tests/contract/test_documentation_contracts.py

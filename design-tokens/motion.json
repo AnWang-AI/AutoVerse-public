@@ -1,0 +1,7 @@
+{
+  "press": {"duration_ms": 60, "curve": "ease-out"},
+  "hover": {"duration_ms": 100, "curve": "ease-out"},
+  "state": {"duration_ms": 140, "curve": [0.2, 0.8, 0.2, 1.0]},
+  "panel": {"duration_ms": 200, "curve": [0.2, 0.8, 0.2, 1.0]},
+  "activity": {"duration_ms": 1100, "curve": [0.37, 0.0, 0.63, 1.0]}
+}

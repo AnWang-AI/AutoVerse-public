@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoverse"
+version = "0.1.0"
+description = "AutoVerse — a cleanly-layered, evolvable AI agent harness"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0",
+    "httpx>=0.27",
+    # rich powers render_event for one-shot --print and the line-based REPL
+    # documented in docs/guides/using-cli-and-tui.md.
+    "rich>=13",
+    # textual is a core dependency for the full-screen and inline interactive
+    # tiers documented in docs/reference/cli.md.
+    "textual>=0.50",
+]
+
+[project.scripts]
+autoverse = "autoverse.frontends.cli.main:main"
+autoverse-web = "autoverse.frontends.web.server:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "pytest-asyncio>=0.23",
+    "pillow>=10",
+    "respx>=0.21",
+    "mypy>=1.8",
+    "import-linter>=2.0",
+]
+browser = [
+    "pillow>=10",
+    "playwright>=1.40",
+]
+redis = [
+    # Optional persistent Store adapter documented in
+    # docs/reference/events-and-storage.md.
+    "redis>=5",
+]
+web = [
+    # The WebUI is a fifth consumer adapter (docs/guides/using-webui.md): a thin FastAPI + SSE
+    # transport over the SAME engine/sink stack the line REPL uses. Only the
+    # transport needs new deps; rendering reuses rich (already core).
+    "fastapi>=0.110",
+    # ``standard`` supplies a supported WebSocket transport for the Apple
+    # WKWebView browser-host bridge in addition to the HTTP/SSE WebUI routes.
+    "uvicorn[standard]>=0.27",
+    # The WebUI settings panel surfaces encrypted-vault key management
+    # (/api/secrets), which needs the AES-GCM backend documented in
+    # docs/reference/config.md. Without it the vault degrades to env+session-only.
+    "cryptography>=42",
+]
+tui = [
+    # Back-compat alias only: textual and rich are now core dependencies, so
+    # `pip install autoverse[tui]` still resolves and is a no-op superset.
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_ignores = false
+ignore_missing_imports = true
+plugins = ["pydantic.mypy"]
+
+[tool.importlinter]
+root_package = "autoverse"
+exclude_type_checking_imports = true
+
+[[tool.importlinter.contracts]]
+name = "core does not depend on infra or frontends or app"
+type = "forbidden"
+source_modules = ["autoverse.core"]
+forbidden_modules = ["autoverse.infra", "autoverse.frontends", "autoverse.app"]
+
+[[tool.importlinter.contracts]]
+name = "ports only depend on types"
+type = "forbidden"
+source_modules = ["autoverse.ports"]
+forbidden_modules = ["autoverse.core", "autoverse.infra", "autoverse.frontends", "autoverse.app"]
+
+[[tool.importlinter.contracts]]
+name = "types depend on nothing internal"
+type = "forbidden"
+source_modules = ["autoverse.types"]
+forbidden_modules = ["autoverse.core", "autoverse.infra", "autoverse.frontends", "autoverse.app", "autoverse.ports"]

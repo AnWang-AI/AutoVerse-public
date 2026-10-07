@@ -1,0 +1,9 @@
+/* Generated from design-tokens/motion.json by scripts/generate_motion_tokens.py. */
+:root {
+  --motion-press: 60ms;
+  --motion-hover: 100ms;
+  --motion-state: 140ms;
+  --motion-panel: 200ms;
+  --motion-activity: 1100ms;
+  --motion-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}

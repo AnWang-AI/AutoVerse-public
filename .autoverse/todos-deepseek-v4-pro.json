@@ -1,0 +1,110 @@
+[
+  {
+    "id": "A",
+    "content": "/subagents cmd: code exists, docs missing",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "B",
+    "content": "5 workflow subcommands: code exists, docs missing",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "C",
+    "content": "CommandSpec.busy_label field docs missing",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "D",
+    "content": "CommandContext fields: docs vs code mismatch",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "E",
+    "content": "check/08-repl-isolation-contracts.md outdated (5/29 vs 33)",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "F",
+    "content": "/simplify: docs mention, code absent",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "G",
+    "content": "_supports_tui: still checks import textual",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "H",
+    "content": "Ctrl+C in line REPL: docs two-phase vs code one-phase",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "I",
+    "content": "_ALWAYS_COLLAPSE_TOOLS: read_image in tui_sink.py, docs missing",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "J",
+    "content": "renderer.py _ALWAYS_COLLAPSE_TOOLS missing read_image vs tui_sink.py",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "K",
+    "content": "diff_render.py inline word highlight: docs say optional, code default",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "L",
+    "content": "CommandSpec field list: docs vs code audit",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "M",
+    "content": "GateDecision/StopGate/Verdict location: contracts.md vs code",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "N",
+    "content": "LLMRequest.max_tokens default: contracts.md 32000 vs code 8192",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "O",
+    "content": "EventType: contracts.md 14 vs code 15 (missing SUBAGENT_CHILD)",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "P",
+    "content": "ModelSpec: contracts.md says types/, actually in infra/llm/",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "Q",
+    "content": "CompactingPayload.kind: docs missing overflow_compact",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": "R",
+    "content": "check/01-08 audit: which are outdated",
+    "status": "pending",
+    "priority": "medium"
+  }
+]

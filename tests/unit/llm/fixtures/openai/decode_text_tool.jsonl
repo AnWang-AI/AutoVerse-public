@@ -1,0 +1,6 @@
+{"_comment": "RECORDED: gpt-4o 2026-06-16 (hand-built minimal openai SSE decode sample: text + tool_call + usage + finish)"}
+{"choices": [{"index": 0, "delta": {"role": "assistant", "content": "Hello"}}]}
+{"choices": [{"index": 0, "delta": {"content": " world"}}]}
+{"choices": [{"index": 0, "delta": {"tool_calls": [{"index": 0, "id": "call_01", "function": {"name": "get_weather", "arguments": "{\"city\":"}}]}}]}
+{"choices": [{"index": 0, "delta": {"tool_calls": [{"index": 0, "function": {"arguments": " \"Paris\"}"}}]}}]}
+{"choices": [{"index": 0, "delta": {}, "finish_reason": "tool_calls"}], "usage": {"prompt_tokens": 12, "completion_tokens": 9}}
